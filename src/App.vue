@@ -242,6 +242,10 @@ const lanternStyle = (index: number) => {
   max-width: 42rem;
   margin: 0 auto;
   padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .eyebrow {
@@ -268,7 +272,7 @@ h1 {
 }
 
 .pill {
-  display: inline-block;
+  display: inline-flex;
   padding: 0.85rem 2.4rem;
   border-radius: 999px;
   background: linear-gradient(135deg, #ffb56b 0%, #ff7c9a 100%);
@@ -277,6 +281,7 @@ h1 {
   text-decoration: none;
   box-shadow: 0 12px 30px rgba(255, 158, 144, 0.35);
   transition: transform 180ms ease, box-shadow 180ms ease;
+  align-self: center;
 }
 
 .pill:hover {
@@ -453,6 +458,7 @@ h1 {
 
   .hero {
     text-align: left;
+    align-items: flex-start;
     padding-top: 6rem;
   }
 
